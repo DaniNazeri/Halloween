@@ -1,0 +1,59 @@
+        @font-face {
+                font-family: 'halloweenparty';
+                src: url('../fuentes/halloweenparty.ttf');
+        }
+        @font-face {
+                font-family: 'warning';
+                src: url('../fuentes/darksouls.ttf');
+        }
+        body {background-color: black;}
+        #container {width: 1280px; 
+                        height: 900px;
+                        background-image: url('../imagenes/wallpaper.jpg');
+                        margin: auto;
+                        position: relative;
+        }
+        #titulo {position: absolute;
+                top: 70px;
+                left: 200px;
+                font-family: 'halloweenparty';
+                font-size: 2em;
+                text-shadow: 1px 1px 1px darkred;
+                color: rgb(241, 53, 53);
+                }
+        #molestar {position:absolute;
+                top:400px;
+                left: 600px;
+                font-family:'warning';
+                font-size: 2em;
+                text-shadow:1px 1px 1px darkred ;
+                color:rgb(255, 137, 137);
+        }
+        #dragonva {position:absolute;
+                        top: 175px;
+                        left:450px;
+                        visibility: hidden;
+                        cursor: crosshair;
+        }
+        #nito {position:absolute;
+                        top: 625px;
+                        left: 1000px;
+                        visibility: hidden;
+                        cursor: crosshair;
+                }
+        #calabazas {/*border: 1px solid white;*/
+                width:100px;
+                height:75px;
+                position:absolute;
+                top: 675px;
+                left:550px;
+                cursor:pointer;
+                }
+        #puerta {/*border: 1px solid white;*/
+                width:150px;
+                height:150px;
+                position:absolute;
+                top:250px;
+                left:1125px;
+                cursor:pointer;
+                }

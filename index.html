@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
+     <title>SCARY HALLOWEEN PARTY</title>
+     <link rel="stylesheet" href="estilo/estilo.css">
+     <script src="javascripts/javascripts.js"></script>
+</head>
+<body onload="sonar('cancion')">
+     <div id= "container">
+          <audio id="cancion" controls>
+               <source src="sonidos/ludwig.mp3" type="audio/mpeg">
+          </audio>
+          <audio id="scream">
+               <source src="sonidos/grito.mp3" type="audio/mpeg">
+          </audio>
+          <audio id="rugido">
+               <source src="sonidos/roar.mp3" type="audio/mpeg">
+          </audio>
+          <p id= "titulo">
+          SCARY HALLOWEEN PARTY
+          </p>
+          <p id= "molestar">
+          ¡NO TOQUES LAS CALABAZAS <br>
+          NI ABRAS LA PUERTA!
+          </p>
+          <img id="dragonva" src= "imagenes/dragonva.gif" height ="300" onclick="ocultar('dragonva');parar('rugido')">
+          <img id="nito" src= "imagenes/nito.gif" height ="200" onclick="ocultar('nito');parar('scream')">
+          <div id="calabazas" onclick="mostrar('dragonva');sonar('rugido')"></div>
+          <div id="puerta" onclick="mostrar('nito');sonar('scream')"></div>
+     </div>
+</body>
+</html>
